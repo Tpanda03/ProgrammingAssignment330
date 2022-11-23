@@ -25,8 +25,14 @@ python3 Part_1.py
 python3 Part_2.py
 ```
 
-## How to generate unit test coverage:
-###
+## Unit test coverage:
+```Python
+def LockCheck(key, LockStatus):
+    ...
+    ...
+        return LockStatus
+```
+
 
 ## The platform it's been tested on:
 ###
