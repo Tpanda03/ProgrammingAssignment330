@@ -48,7 +48,6 @@ def main():
         # enter value in one at a time
         val = input(">> ")
         key = getDigit(Code, State)
-        print("Hello")
     
         if val is key: #if the the nth digit in key was match in sequence
             State += 1
