@@ -45,6 +45,6 @@ This getDigit function is to get the correct value needed to enter into the keyp
 ## The platform it's been tested on:
 This has been tested on a linux enviroment, as of yet there are no known bugs.
 However,
-the code will raise an exception and reset state when a two or more digit number, or a non numerical value is entered.
+the code will raise an exception and reset state when an incorrect or a non numerical value is entered.
 
 #Author: Tejash Panda
