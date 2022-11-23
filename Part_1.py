@@ -29,7 +29,7 @@ def getDigit(number, n):
 
 def main():
     # Global Variables
-    Code = "59823"  # Our code Student ID: A204(59823)
+    Code = "02345"  # Our code Student ID: A204(59823)
     LockStatus = True # current status of lock
     State = 0  # Current state in FSM
 
@@ -48,7 +48,13 @@ def main():
         # enter value in one at a time
         val = input(">> ")
         key = getDigit(Code, State)
+        print(key)
+        print(State)
 
+        if val > 9:
+            print("Value entered is not valid")
+            State = 0
+    
         if val is key: #if the the nth digit in key was match in sequence
             State += 1
         else: #if you break the sequence
