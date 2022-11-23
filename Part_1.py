@@ -51,7 +51,7 @@ def main():
         print(key)
         print(State)
 
-        if val > 9:
+        if val > 9 or val < 0:
             print("Value entered is not valid")
             State = 0
     
