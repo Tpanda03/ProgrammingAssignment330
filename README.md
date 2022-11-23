@@ -14,6 +14,7 @@ To run the program you must first clone the repository using
 
 ```
 git clone https://github.com/Tpanda03/ProgrammingAssignment330.git
+cd ProgrammingAssignment330
 ```
 
 then to run the program use python3 on a linux enviroment, like Ubuntu
