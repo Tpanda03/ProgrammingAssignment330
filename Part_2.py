@@ -2,6 +2,23 @@
 import random
 from time import sleep
 
+def DoorCheck(door):
+    if door is False:
+        print("Unlocked")
+    else:
+        print("Locked")
+    return door
+
+def getDigit(number, n):
+    return number // 10**n % 10
+
+def numDigits(num):
+    count = 0
+    while num != 0:
+        num //= 10
+        count += 1
+    return count
+
 def LockCheck(key, LockStatus):
     if key == 1 and LockStatus is True: #if unlock value is entered and lock is locked
         print("Unlocked")
@@ -22,24 +39,6 @@ def LockCheck(key, LockStatus):
 
         return LockStatus
 
-def getDigit(number, n):
-    return number // 10**n % 10
-
-
-def numDigits(num):
-    count = 0
-    while num != 0:
-        num //= 10
-        count += 1
-    return count
-
-
-def DoorCheck(door):
-    if door is False:
-        print("Unlocked")
-    else:
-        print("Locked")
-    return door
 
 def main():
     # Global Variables
