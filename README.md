@@ -12,20 +12,21 @@ As soon as the last digit of the access code is entered, your program will signa
 ## How to build and run the executable:
 To run the program you must first clone the repository using 
 
-'''
+```
 git clone https://github.com/Tpanda03/ProgrammingAssignment330.git
-'''
+```
 
 then to run the program use python3 on a linux enviroment, like Ubuntu
 
-'''
+```
 python3 Part_1.py
-'''
+```
+
 or
 
-'''
+```
 python3 Part_2.py
-'''
+```
 
 ## How to generate unit test coverage:
 ###
