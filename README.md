@@ -21,9 +21,6 @@ then to run the program use python3 on a linux enviroment, like Ubuntu
 ```
 python3 Part_1.py
 ```
-
-or
-
 ```
 python3 Part_2.py
 ```
