@@ -29,7 +29,7 @@ def getDigit(number, n):
 
 def main():
     # Global Variables
-    Code = "02345"  # Our code Student ID: A204(59823)
+    Code = "02963"  # Our code Student ID: A204(59823)
     LockStatus = True # current status of lock
     State = 0  # Current state in FSM
 
