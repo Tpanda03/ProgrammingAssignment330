@@ -30,8 +30,22 @@ python3 Part_2.py
 ## Unit test coverage:
 ```Python
 def LockCheck(key, LockStatus):
-    ...
-    ...
+     if key == 1 and LockStatus is True: #if unlock value is entered and lock is locked
+        print("Unlocked")
+        return False
+
+    elif key == 4 and LockStatus is False: #if lock value is entered and lock is unlocked
+        print("Locked")
+        return True
+
+    else:
+        if (key == 1) or (key == 4): #to ensure security
+            if LockStatus is True:
+                print("... Still Locked")
+            else:
+                print("... Still Unlocked")
+        else:
+            print("...")
         return LockStatus
 ```
 This lockCheck function takes in a key, which is a numerical unlock or lock value and the current LockStatus which tells us if the access is currently locked and unlocked. This code block, or method, is called when the correct sequence is entered to the keypad.
@@ -41,6 +55,17 @@ def getDigit(number, n):
     return number[n]
 ```
 This getDigit function is to get the correct value needed to enter into the keypad, this is taken into account the state of the FSM, depicted by n, and our code, depicted by number. 
+
+in Part 2
+```Python
+def DoorCheck(door):
+    if door is False:
+        print("Unlocked")
+    else:
+        print("Locked")
+    return door
+```
+in Part 2 we are to check the door after every attempt, this is the function to see if the door is unlocked or locked after our most recent attempt
 
 ## The platform it's been tested on:
 This has been tested on a linux enviroment, as of yet there are no known bugs.
